@@ -13,6 +13,14 @@ The IDCamp online training module was developed by [Dicoding](https://www.dicodi
 
 A complete curriculum designed by a team of Dicoding experts together with industry practitioners. Students are prepared to become a global standard Data Scientist.
 
+## Modules
+
+1. Dasar Data Science
+2. Dasar Structured Query Language (SQL)
+3. Pemrograman dengan Python
+4. Analisis Data dengan Python
+5. Machine Learning untuk Pemula
+
 ## References
 
 [Dicoding Indonesia](https://www.dicoding.com/) | [Indosat Ooredoo Hutchison Digital Camp](https://idcamp.ioh.co.id/) | [LinkedIn IDCamp Page](https://www.linkedin.com/company/idcamp/)
