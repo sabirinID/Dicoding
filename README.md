@@ -15,11 +15,11 @@ A complete curriculum designed by a team of Dicoding experts together with indus
 
 ## Modules
 
-1. Dasar Data Science
-2. Dasar Structured Query Language (SQL)
-3. Pemrograman dengan Python
-4. Analisis Data dengan Python
-5. Machine Learning untuk Pemula
+1. [Dasar Data Science](https://www.dicoding.com/academies/615/corridor)
+2. [Dasar Structured Query Language (SQL)](https://www.dicoding.com/academies/600/corridor)
+3. [Pemrograman dengan Python](https://www.dicoding.com/academies/86/corridor)
+4. [Analisis Data dengan Python](https://www.dicoding.com/academies/555/corridor)
+5. [Machine Learning untuk Pemula](https://www.dicoding.com/academies/184/corridor)
 
 ## References
 
