@@ -4,17 +4,18 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load data
-df = pd.read_csv('main_data.csv')
+df = pd.read_csv('main_data.csv', index=False)
 
-# Create a sidebar
-option = st.sidebar.selectbox(
-    'Select variable:',
-    ('temperature', 'humidity', 'wind_speed'))
+min_date = df['date'].min()
+max_date = df['date'].max()
+ 
+with st.sidebar:
+    # Menambahkan logo
+    st.image('https://cdn.lyft.com/static/bikesharefe/logo/CapitalBikeshare-main.svg')
 
-# Create a plot based on the selected option
-st.title(f'Plot of {option}')
-plt.figure(figsize=(16, 9))
-plt.hist(df[option], bins=30)
-plt.xlabel(option)
-plt.ylabel('Count')
-st.pyplot()
+    # Mengambil start_date & end_date dari date_input
+    start_date, end_date = st.date_input(
+        label='Rentang Waktu',min_value=min_date,
+        max_value=max_date,
+        value=[min_date, max_date]
+    )
