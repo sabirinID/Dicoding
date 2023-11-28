@@ -16,6 +16,9 @@ main_data = pd.read_csv(
 # Mengubah kolom 'date' menjadi datetime
 main_data['date'] = pd.to_datetime(main_data['date'])
 
+# Mengubah format tanggal
+main_data['date'] = main_data['date'].dt.strftime('%Y-%m-%d')
+
 # Menghitung total rentals harian
 daily_total_rentals = main_data.groupby(pd.Grouper(key='date', freq='D'))[
     ['non_registered_user_rentals', 'registered_user_rentals']
