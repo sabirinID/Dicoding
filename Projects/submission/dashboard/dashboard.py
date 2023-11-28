@@ -74,8 +74,6 @@ st.subheader('Monthly Rentals')
 
 col1, col2, col3 = st.columns(3)
 
-monthly_total_rentals.set_index('date', inplace=True)
-
 with col1:
     min_rentals = monthly_total_rentals['total_rentals'].min()
     min_date = monthly_total_rentals.loc[
