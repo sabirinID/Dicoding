@@ -4,27 +4,35 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-sns.set(style='dark')
+
+sns.set(style="dark")
 
 # Membaca data
-main_data = pd.read_csv('https://raw.githubusercontent.com/sabirinID/IDCamp/main/Projects/submission/dashboard/main_data.csv')
+main_data = pd.read_csv(
+    "https://raw.githubusercontent.com/sabirinID/IDCamp/main/Projects/submission/dashboard/main_data.csv"
+)
 
 # Mengubah kolom 'date' menjadi datetime
-main_data['date'] = pd.to_datetime(main_data['date'])
+main_data["date"] = pd.to_datetime(main_data["date"])
 
 # Menghitung total rentals harian
-daily_total_rentals = main_data.groupby(pd.Grouper(key='date', freq='D'))[['non_registered_user_rentals', 'registered_user_rentals']].sum()
-daily_total_rentals['total_rentals'] = daily_total_rentals['non_registered_user_rentals'] + daily_total_rentals['registered_user_rentals']
+daily_total_rentals = main_data.groupby(pd.Grouper(key="date", freq="D"))[
+    ["non_registered_user_rentals", "registered_user_rentals"]
+].sum()
+daily_total_rentals["total_rentals"] = (
+    daily_total_rentals["non_registered_user_rentals"]
+    + daily_total_rentals["registered_user_rentals"]
+)
 daily_total_rentals.reset_index(inplace=True)
 
 # Menghitung total rentals bulanan
-monthly_total_rentals = daily_total_rentals.resample('M', on='date').sum()
+monthly_total_rentals = daily_total_rentals.resample("M", on="date").sum()
 
-st.title('Bike Share Dashboard')
+st.title("Bike Share Dashboard")
 
-st.text('Created by Syahril Dimas Sabirin, @sabirinID')
+st.text("Created by Syahril Dimas Sabirin, @sabirinID")
 
-st.header('Jumlah Rental Sepeda')
+st.header("Jumlah Rental Sepeda")
 
 st.subheader("Daily Rentals")
 
