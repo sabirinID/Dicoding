@@ -27,7 +27,7 @@ daily_total_rentals['total_rentals'] = (
 daily_total_rentals.reset_index(inplace=True)
 
 # Menghitung total rentals bulanan
-monthly_total_rentals = daily_total_rentals.resample('M', on='date').sum()
+monthly_total_rentals = daily_total_rentals.resample('M', on='date').mean()
 
 st.title('Bike Share Dashboard')
 
