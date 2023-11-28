@@ -1,3 +1,6 @@
+# Menginstal 'requirements'
+pip install -r requirements.txt
+
 # Mengimpor pustaka
 import streamlit as st
 import numpy as np
