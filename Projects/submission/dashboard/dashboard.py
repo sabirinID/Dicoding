@@ -17,9 +17,13 @@ daily_total_rentals = main_data.groupby(pd.Grouper(key='date', freq='D'))[['non_
 daily_total_rentals['total_rentals'] = daily_total_rentals['non_registered_user_rentals'] + daily_total_rentals['registered_user_rentals']
 daily_total_rentals.reset_index(inplace=True)
 
-st.header('Bike Share Dashboard')
+st.title('Bike Share Dashboard')
 
-st.subheader('Daily Rentals')
+st.text('Syahril Dimas Sabirin, @sabirinID')
+
+st.header('Jumlah Rental Sepeda')
+
+st.subheader('Rental Harian')
 
 col1, col2, col3 = st.columns(3)
 
@@ -48,4 +52,4 @@ ax.tick_params(axis='x', labelsize=15)
 
 st.pyplot(fig)
 
-st.caption('Copyright (c) Sabirin 2023')
+st.caption('Copyright (c) @sabirinID 2023')
