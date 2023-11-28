@@ -1,8 +1,7 @@
 # Proyek Akhir: Klasifikasi Gambar
 
 <p align='center'>
-  <img src='Projects
-/rockpaperscissors/rockpaperscissors.png' width='600' height='auto'>
+  <img src='rockpaperscissors.png' width='600' height='auto'>
   <br>
   Image by <a href='https://en.wikipedia.org/wiki/Rock_paper_scissors'>Wikipedia</a>
 </p>
@@ -17,7 +16,7 @@ Dataset yang digunakan, yaitu [rockpaperscissors](https://github.com/dicodingaca
 
 - Dataset harus dibagi menjadi *train set* dan *validation set*.
 - Ukuran validation set harus 40% dari total dataset (data training memiliki 1314 sampel, dan data validasi sebanyak 874 sampel).
-- Harus mengimplementasikan [data augmentation(https://www.tensorflow.org/tutorials/images/data_augmentation)].
+- Harus mengimplementasikan [data augmentation](https://www.tensorflow.org/tutorials/images/data_augmentation).
 - Harus menggunakan `ImageDataGenerator`.
 - Harus menggunakan model [Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential).
 - Harus memiliki akurasi model minimal 85%.
