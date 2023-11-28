@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+sns.set(style='dark')
 
 # Baca data
 main_data = pd.read_csv('main_data.csv')
