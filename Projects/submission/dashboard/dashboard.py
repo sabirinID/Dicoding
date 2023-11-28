@@ -72,7 +72,7 @@ with col3:
     st.metric('Total Rentals', value=total_rentals)
 
 fig, ax = plt.subplots(figsize=(16, 9))
-ax.plot(
+ax.barh(
     monthly_total_rentals.index,
     monthly_total_rentals['total_rentals'],
     marker='o', 
