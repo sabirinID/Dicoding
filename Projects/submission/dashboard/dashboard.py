@@ -26,62 +26,56 @@ st.text('Created by Syahril Dimas Sabirin, @sabirinID')
 
 st.header('Jumlah Rental Sepeda')
 
-st.subheader('Daily Rentals')
+st.subheader("Daily Rentals")
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    min_rentals = daily_total_rentals['total_rentals'].min()
-    st.metric('Min Rentals', value=min_rentals)
-
+    min_rentals = daily_total_rentals["total_rentals"].min()
+    st.metric("Min Rentals", value=min_rentals)
 with col2:
-    max_rentals = daily_total_rentals['total_rentals'].max()
-    st.metric('Max Rentals', value=max_rentals)
-
+    max_rentals = daily_total_rentals["total_rentals"].max()
+    st.metric("Max Rentals", value=max_rentals)
 with col3:
-    total_rentals = daily_total_rentals['total_rentals'].sum()
-    st.metric('Total Rentals', value=total_rentals)
-
+    total_rentals = daily_total_rentals["total_rentals"].sum()
+    st.metric("Total Rentals", value=total_rentals)
 fig, ax = plt.subplots(figsize=(16, 9))
 ax.plot(
-    daily_total_rentals['date'],
-    daily_total_rentals['total_rentals'],
-    marker='o', 
+    daily_total_rentals["date"],
+    daily_total_rentals["total_rentals"],
+    marker="o",
     linewidth=2,
-    color='tab:blue'
+    color="tab:blue",
 )
-ax.tick_params(axis='y', labelsize=20)
-ax.tick_params(axis='x', labelsize=15)
+ax.tick_params(axis="y", labelsize=20)
+ax.tick_params(axis="x", labelsize=15)
 
 st.pyplot(fig)
 
-st.subheader('Monthly Rentals')
+st.subheader("Monthly Rentals")
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    min_rentals = monthly_total_rentals['total_rentals'].min()
-    st.metric('Min Rentals', value=min_rentals)
-
+    min_rentals = monthly_total_rentals["total_rentals"].min()
+    st.metric("Min Rentals", value=min_rentals)
 with col2:
-    max_rentals = monthly_total_rentals['total_rentals'].max()
-    st.metric('Max Rentals', value=max_rentals)
-
+    max_rentals = monthly_total_rentals["total_rentals"].max()
+    st.metric("Max Rentals", value=max_rentals)
 with col3:
-    total_rentals = monthly_total_rentals['total_rentals'].sum()
-    st.metric('Total Rentals', value=total_rentals)
-
+    total_rentals = monthly_total_rentals["total_rentals"].sum()
+    st.metric("Total Rentals", value=total_rentals)
 fig, ax = plt.subplots(figsize=(16, 9))
-ax.barh(
+ax.plot(
     monthly_total_rentals.index,
-    monthly_total_rentals['total_rentals'],
-    marker='o', 
+    monthly_total_rentals["total_rentals"],
+    marker="o",
     linewidth=2,
-    color='tab:blue'
+    color="tab:blue",
 )
-ax.tick_params(axis='y', labelsize=20)
-ax.tick_params(axis='x', labelsize=15, rotation=90)
+ax.tick_params(axis="y", labelsize=20)
+ax.tick_params(axis="x", labelsize=15, rotation=90)
 
 st.pyplot(fig)
 
-st.caption('Copyright (c) @sabirinID 2023')
+st.caption("Copyright (c) @sabirinID 2023")
