@@ -7,7 +7,7 @@ import seaborn as sns
 sns.set(style='dark')
 
 # Membaca data
-main_data = pd.read_csv('main_data.csv')
+main_data = pd.read_csv('https://raw.githubusercontent.com/sabirinID/IDCamp/main/Projects/submission/dashboard/main_data.csv')
 
 # Mengubah kolom 'date' menjadi datetime
 main_data['date'] = pd.to_datetime(main_data['date'])
