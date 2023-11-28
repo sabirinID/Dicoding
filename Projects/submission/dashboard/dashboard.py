@@ -76,10 +76,18 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     min_rentals = monthly_total_rentals['total_rentals'].min()
+    min_month = monthly_total_rentals.index[
+        monthly_total_rentals['total_rentals'].idxmin()
+    ].month
     st.metric('Min Rentals', value=min_rentals)
+    st.write(f'in Month {min_month}')
 with col2:
     max_rentals = monthly_total_rentals['total_rentals'].max()
+    max_month = monthly_total_rentals.index[
+        monthly_total_rentals['total_rentals'].idxmax()
+    ].month
     st.metric('Max Rentals', value=max_rentals)
+    st.write(f'in Month {max_month}')
 with col3:
     total_rentals = monthly_total_rentals['total_rentals'].sum()
     st.metric('Total Rentals', value=total_rentals)
