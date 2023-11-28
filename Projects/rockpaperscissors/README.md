@@ -12,7 +12,7 @@ Kita telah berada di akhir pembelajaran dalam akademi ini. Kita sudah mempelajar
 
 Dataset yang digunakan, yaitu [rockpaperscissors](https://github.com/dicodingacademy/assets/releases/download/release/rockpaperscissors.zip).
 
-## Kriteria
+## Criteria
 
 - Dataset harus dibagi menjadi *train set* dan *validation set*.
 - Ukuran validation set harus 40% dari total dataset (data training memiliki 1314 sampel, dan data validasi sebanyak 874 sampel).
@@ -22,3 +22,15 @@ Dataset yang digunakan, yaitu [rockpaperscissors](https://github.com/dicodingaca
 - Harus memiliki akurasi model minimal 85%.
 - Pelatihan model tidak melebihi waktu 30 menit.
 - Program dikerjakan pada [Google Colaboratory](https://colab.research.google.com/).
+
+## Project Organization
+```
+.
+rockpaperscissors           : contains csv file
+├── README.md               : Report
+├── rockpaperscissors.ipynb : Notebook
+├── rockpaperscissors.png   : Image
+└── requirements.txt        : requirements to run this model
+```
+
+## References
