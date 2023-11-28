@@ -14,7 +14,7 @@ main_data = pd.read_csv(
 )
 
 # Mengubah kolom 'date' menjadi datetime
-main_data['date'] = pd.to_datetime(main_data['date'], format='%Y-%m-%d')
+main_data['date'] = pd.to_datetime(main_data['date'])
 
 # Menghitung total rentals harian
 daily_total_rentals = main_data.groupby(pd.Grouper(key='date', freq='D'))[
@@ -105,8 +105,8 @@ ax.plot(
 ax.tick_params(axis='y', labelsize=20)
 ax.tick_params(axis='x', labelsize=15, rotation=90)
 
-monthly_total_rentals.index = pd.to_datetime(monthly_total_rentals.index)
-ax.xaxis.set_major_formatter(mdates.DateFormatter('%B'))
+# monthly_total_rentals.index = pd.to_datetime(monthly_total_rentals.index)
+# ax.xaxis.set_major_formatter(mdates.DateFormatter('%B'))
 
 st.pyplot(fig)
 
