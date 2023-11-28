@@ -1,17 +1,18 @@
 # Mengimpor pustaka
 import streamlit as st
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(style='dark')
 
-# Baca data
+# Membaca data
 main_data = pd.read_csv('main_data.csv')
 
-# Ubah kolom 'date' menjadi datetime
+# Mengubah kolom 'date' menjadi datetime
 main_data['date'] = pd.to_datetime(main_data['date'])
 
-# Hitung total rentals harian
+# Menghitung total rentals harian
 daily_total_rentals = main_data.groupby(pd.Grouper(key='date', freq='D'))[['non_registered_user_rentals', 'registered_user_rentals']].sum()
 daily_total_rentals['total_rentals'] = daily_total_rentals['non_registered_user_rentals'] + daily_total_rentals['registered_user_rentals']
 daily_total_rentals.reset_index(inplace=True)
