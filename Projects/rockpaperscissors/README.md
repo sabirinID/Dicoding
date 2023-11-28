@@ -1,7 +1,7 @@
 # Proyek Akhir: Klasifikasi Gambar
 
 <p align='center'>
-  <img src='rockpaperscissors.png' width='600' height='auto'>
+  <img src='rockpaperscissors.png' width='300' height='auto'>
   <br>
   Image by <a href='https://en.wikipedia.org/wiki/Rock_paper_scissors'>Wikipedia</a>
 </p>
