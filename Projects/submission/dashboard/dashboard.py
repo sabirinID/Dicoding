@@ -97,6 +97,7 @@ ax.tick_params(axis='x', labelsize=15, rotation=90)
 
 monthly_total_rentals.index = pd.to_datetime(monthly_total_rentals.index)
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%B'))
+plt.gcf().autofmt_xdate()
 
 st.pyplot(fig)
 
