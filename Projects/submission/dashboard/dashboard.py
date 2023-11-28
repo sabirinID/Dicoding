@@ -44,17 +44,19 @@ with col1:
     min_date = daily_total_rentals.loc[
         daily_total_rentals['total_rentals'].idxmin(), 'date'
     ]
-    st.metric('Min Rentals', value=min_rentals, key=f'Min Rentals on {min_date}')
+    st.metric('Min Rentals', value=min_rentals)
+    st.write(f'Min Rentals on {min_date}')
 with col2:
     max_rentals = daily_total_rentals['total_rentals'].max()
     max_date = daily_total_rentals.loc[
         daily_total_rentals['total_rentals'].idxmax(), 'date'
     ]
-    st.metric('Max Rentals', value=max_rentals, key=f'Max Rentals on {max_date}')
+    st.metric('Max Rentals', value=max_rentals)
+    st.write(f'Max Rentals on {max_date}')
 with col3:
     total_rentals = daily_total_rentals['total_rentals'].sum()
     st.metric('Total Rentals', value=total_rentals)
-    
+
 fig, ax = plt.subplots(figsize=(16, 9))
 ax.plot(
     daily_total_rentals['date'],
@@ -77,13 +79,15 @@ with col1:
     min_date = monthly_total_rentals.loc[
         monthly_total_rentals['total_rentals'].idxmin(), 'date'
     ]
-    st.metric('Min Rentals', value=min_rentals, key=f'Min Rentals on {min_date}')
+    st.metric('Min Rentals', value=min_rentals)
+    st.write(f'Min Rentals on {min_date}')
 with col2:
     max_rentals = monthly_total_rentals['total_rentals'].max()
     max_date = monthly_total_rentals.loc[
         monthly_total_rentals['total_rentals'].idxmax(), 'date'
     ]
-    st.metric('Max Rentals', value=max_rentals, key=f'Max Rentals on {max_date}')
+    st.metric('Max Rentals', value=max_rentals)
+    st.write(f'Max Rentals on {max_date}')
 with col3:
     total_rentals = monthly_total_rentals['total_rentals'].sum()
     st.metric('Total Rentals', value=total_rentals)
