@@ -74,6 +74,8 @@ st.subheader('Monthly Rentals')
 
 col1, col2, col3 = st.columns(3)
 
+monthly_total_rentals.index = pd.to_datetime(monthly_total_rentals.index)
+
 with col1:
     min_rentals = monthly_total_rentals['total_rentals'].min()
     min_month = monthly_total_rentals.index[
