@@ -19,7 +19,7 @@ daily_total_rentals.reset_index(inplace=True)
 
 st.title('Bike Share Dashboard')
 
-st.text('Syahril Dimas Sabirin, @sabirinID')
+st.text('Created by Syahril Dimas Sabirin, @sabirinID')
 
 st.header('Jumlah Rental Sepeda')
 
