@@ -34,3 +34,6 @@ rockpaperscissors           : contains csv file
 ```
 
 ## References
+
+1. https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator
+2. 
