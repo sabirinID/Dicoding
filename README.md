@@ -23,4 +23,6 @@ A complete curriculum designed by a team of Dicoding experts together with indus
 
 ## References
 
-[Dicoding Indonesia](https://www.dicoding.com/) | [Indosat Ooredoo Hutchison Digital Camp](https://idcamp.ioh.co.id/) | [LinkedIn IDCamp Page](https://www.linkedin.com/company/idcamp/)
+1. [Dicoding Indonesia](https://www.dicoding.com/)
+2. [Indosat Ooredoo Hutchison Digital Camp](https://idcamp.ioh.co.id/)
+3. [LinkedIn IDCamp Page](https://www.linkedin.com/company/idcamp/)
