@@ -17,9 +17,11 @@ A complete curriculum designed by a team of Dicoding experts together with indus
 
 1. [Dasar Data Science](https://www.dicoding.com/academies/615/corridor)
 2. [Dasar Structured Query Language (SQL)](https://www.dicoding.com/academies/600/corridor)
-3. [Pemrograman dengan Python](https://www.dicoding.com/academies/86/corridor)
-4. [Analisis Data dengan Python](https://www.dicoding.com/academies/555/corridor)
-5. [Machine Learning untuk Pemula](https://www.dicoding.com/academies/184/corridor)
+3. [Dasar Visualisasi Data](https://www.dicoding.com/academies/177/corridor)
+4. [Pemrograman dengan Python](https://www.dicoding.com/academies/86/corridor)
+5. [Analisis Data dengan Python](https://www.dicoding.com/academies/555/corridor)
+6. [Machine Learning untuk Pemula](https://www.dicoding.com/academies/184/corridor)
+7. [Dasar AI](https://www.dicoding.com/academies/653/corridor)
 
 ## References
 
