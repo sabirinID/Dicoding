@@ -21,7 +21,7 @@ A complete curriculum designed by a team of Dicoding experts together with indus
 4. [Pemrograman dengan Python](https://www.dicoding.com/academies/86/corridor)
 5. [Analisis Data dengan Python](https://www.dicoding.com/academies/555/corridor)
 6. [Machine Learning untuk Pemula](https://www.dicoding.com/academies/184/corridor)
-7. [Dasar AI](https://www.dicoding.com/academies/653/corridor)
+7. [Dasar Artificial Intelligence (AI)](https://www.dicoding.com/academies/653/corridor)
 
 ## References
 
